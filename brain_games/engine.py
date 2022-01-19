@@ -19,6 +19,7 @@ def run_game(brain_game):
         if game_answer == user_answer:
             print('Correct!')
         else:
-            return print(f'"{user_answer}" is wrong answer ;(.'
-                         f' Correct answer was "{game_answer}"')
+            print(f'"{user_answer}" is wrong answer ;(.'
+                  f' Correct answer was "{game_answer}"')
+            return print(f'Let\'s try again, {user_name}!')
     print(f'Congratulations, {user_name}!')
