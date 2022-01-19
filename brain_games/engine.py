@@ -21,4 +21,4 @@ def run_game(brain_game):
         else:
             return print(f'"{user_answer}" is wrong answer ;(.'
                          f' Correct answer was "{game_answer}"')
-    print(f'Congratulations, {user_name}')
+    print(f'Congratulations, {user_name}!')
