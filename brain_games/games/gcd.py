@@ -19,5 +19,5 @@ def get_game():
                                   const_lib.SECOND_RANDOM_VALUE)
     second_number = random.randint(const_lib.FIRST_RANDOM_VALUE,
                                    const_lib.SECOND_RANDOM_VALUE)
-    return f'{first_number}  {second_number}',\
+    return f'{str(first_number)}  {str(second_number)}',\
         f'{get_gcd(first_number, second_number)}'
