@@ -15,5 +15,5 @@ def get_game():
                                   SECOND_RANDOM_VALUE)
     second_number = random.randint(FIRST_RANDOM_VALUE,
                                    SECOND_RANDOM_VALUE)
-    return f'{str(first_number)}  {str(second_number)}',\
+    return str(first_number) + ' ' + str(second_number),\
         f'{math.gcd(first_number, second_number)}'
