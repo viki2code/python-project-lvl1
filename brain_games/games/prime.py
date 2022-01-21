@@ -2,10 +2,11 @@
 Game prime
 """
 import random
-from brain_games import const_lib
 
 
 TASK = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+FIRST_RANDOM_VALUE = 1
+SECOND_RANDOM_VALUE = 50
 
 
 def is_prime(question_number):
@@ -19,7 +20,7 @@ def is_prime(question_number):
 
 
 def get_game():
-    question_number = random.randint(const_lib.FIRST_RANDOM_VALUE,
-                                     const_lib.SECOND_RANDOM_VALUE)
+    question_number = random.randint(FIRST_RANDOM_VALUE,
+                                     SECOND_RANDOM_VALUE)
     return f'{question_number}',\
         'yes' if is_prime(question_number) else 'no'
